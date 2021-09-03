@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+    Comentario.
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+       
+        
+     
+       
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" href="assets/jquery.mobile.structure-1.4.5.min.css">
+        <link rel="stylesheet" href="assets/jquery.mobile.icons.min.css">
+        <link rel="stylesheet" href="assets/theme.min.css">
+        <script src="assets/jquery-1.11.1.min.js"></script>
+        <script src="assets/jquery.mobile-1.4.5.min.js"></script>
+        <title>Hello World</title>
+    </head>
+    <body>
+        
+        <div data-role="page" id="pageHome">
+
+            <div data-role="panel" id="painellateral">
+                <ul data-role="listview" >
+                 <!--   <li data-icon="custom" id="skull"><a href="#">custom-icon</a></li> -->
+                 <li data-icon="delete"><a href="#" data-rel="close">&nbsp</a></li>
+                 <li data-icon="home"><a href="https://www.google.com.br" >Home </a></li>
+                 <li><a href="#">Item 2 </a></li>
+                 <li><a href="#">Item 3 </a></li>
+                 <!--   <li data-icon="gear"><a href="#">data-icon="gear"</a></li>-->
+                  <!--  <li data-icon="info"><a href="#">data-icon="info"</a></li> -->
+                 <!--   <li data-icon="false"><a href="#">data-icon="false"</a></li> -->
+                </ul>
+
+            </div><!-- /menu lateral -->
+
+
+            <div data-role="header">
+                <h2>Segundo</h2>
+                <a href="#painellateral" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left ui-btn-icon-notext" ></a>
+            </div><!-- /header -->
+        
+            <div data-role="content" class="ui-content">
+            <div class="ui-body ui-body-a ui-corner-all ">
+                <h2>Principal</h2>
+                <p>AQUI FICA Conteudo principal.</p>
+                <div class="ui-field-contain">
+                    <label for="txtNome">Nome</label>
+                    <input type="text" name="txtNome">
+
+                </div>
+            </div>
+            </div><!-- /content -->
+        
+            <div data-role="footer">
+                <h4>Desenvolvido HDC- Tecnologia</h4>
+                <div data-role="navbar">
+                <ul>
+                        <li><a href="#" class="ui-btn-active">Home</a></li>
+                        <li><a href="#" >Meus dados</a></li>
+                        <li><a href="#" >Ajuda</a></li>
+
+                </ul>
+                </div>
+                </div>
+            </div><!-- /footer -->
+        </div><!-- /page -->
+
+    </body>
+</html>
