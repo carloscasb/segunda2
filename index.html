@@ -19,9 +19,9 @@
     </head>
     <body>
         
-        <div data-role="page" id="pageHome">
+        <div data-role="page" id="pageHome"> <!--INICIO de  /page -->
 
-            <div data-role="panel" id="painellateral">
+            <div data-role="panel" id="painellateral"> <!--INICIO de  /menulateral -->
                 <ul data-role="listview" >
                  <!--   <li data-icon="custom" id="skull"><a href="#">custom-icon</a></li> -->
                  <li data-icon="delete"><a href="#" data-rel="close">&nbsp</a></li>
@@ -33,15 +33,15 @@
                  <!--   <li data-icon="false"><a href="#">data-icon="false"</a></li> -->
                 </ul>
 
-            </div><!-- /menu lateral -->
+            </div><!-- fim /menu lateral -->
 
 
-            <div data-role="header">
+            <div data-role="header"> <!--INICIO de  /header -->
                 <h2>Segundo</h2>
                 <a href="#painellateral" class="ui-btn ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left ui-btn-icon-notext" ></a>
-            </div><!-- /header -->
+            </div><!-- fim /header -->
         
-            <div data-role="content" class="ui-content">
+            <div data-role="content" class="ui-content"> <!--INICIO de  /content -->
             <div class="ui-body ui-body-a ui-corner-all ">
                 <h2>Principal</h2>
                 <p>AQUI FICA Conteudo principal.</p>
@@ -51,21 +51,71 @@
 
                 </div>
             </div>
-            </div><!-- /content -->
+            </div><!-- FIM /content -->
         
-            <div data-role="footer">
-                <h4>Desenvolvido HDC- Tecnologia</h4>
+            <div data-role="footer" data-position="fixed"><!--INICIO de  /footer -->
+                
                 <div data-role="navbar">
                 <ul>
-                        <li><a href="#" class="ui-btn-active">Home</a></li>
-                        <li><a href="#" >Meus dados</a></li>
+                        <li><a href="#pageHome" class="ui-btn-active ui-state-persist">Home</a></li>
+                        <li><a href="#pageMeusDados" >Meus dados</a></li>
                         <li><a href="#" >Ajuda</a></li>
 
                 </ul>
                 </div>
+                <h4>Desenvolvido HDC- Tecnologia</h4>
                 </div>
             </div><!-- /footer -->
-        </div><!-- /page -->
+        </div><!--fim de  /page  e DO CONTEUDO DA PAGINA HOME -->
+
+        <!--INICIO de  /Neus dados  SEGUNDO ViEW -->
+
+        <div data-role="page" id="pageMeusDados"  >
+            <div data-role="header"> 
+                <h2>Segundo</h2>
+                <a href="#"  data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left ui-btn-icon-notext" ></a>
+            </div>
+
+            <div data-role="content" class="ui-content"> <!--INICIO de content/MeusDados -->
+
+                <div class="ui-body">
+                    <h2>Meus Dados</h2>
+                    <div class="ui-field-contain">
+                        <label for="txtNome">Nome</label>
+                        <input type="text" name="txtNome" value="Carlos">
+                    </div>
+                    <div class="ui-field-contain">
+                        <label for="txtEmail">Email</label>
+                        <input type="text" name="txtEmail" value="carlos@gmail">
+                    </div>
+                    <div class="ui-field-contain">
+                        <label for="flipNotif">Notificação:</label>
+                        <input type="checkbox" data-role="flipswitch" name="flipNotif" id="flipNotif">
+                    </div>
+                    <button class="ui-btn ui-corner-all ui-btn-active" >Salvar</button>
+                </div>
+
+            </div><!-- FIM DO /content /MeusDados -->
+            <div data-role="footer" data-position="fixed"><!--INICIO de footer/MeusDados -->
+                
+                <div data-role="navbar">
+                <ul>
+                        <li><a href="#pageHome" >Home</a></li>
+                        <li><a href="#pageMeusDados" class="ui-btn-active ui-state-persist" >Meus dados</a></li>
+                        <li><a href="#" >Ajuda</a></li>
+
+                </ul>
+                </div>               
+            </div>
+
+        </div><!-- FIM DO /footer/MeusDados -->
+
+         <!--INICIO de  /Ajuda  TERCEIRA ViEW -->
+         <div data-role="page" id="pageAjuda">
+
+
+        </div ><!-- FIM DO //Ajuda  TERCEIRA ViEW -->
+
 
     </body>
 </html>
